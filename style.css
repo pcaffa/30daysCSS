@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: inline;
+
+    font: 18px 'Nunito', sans-serif;
+    background: #ffadc8;   
+    color: rgb(42, 1, 109);
+}
+
+header {
+    font: 22px 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 2vw;
+    text-align: center;
+    background:#ffadc8;
+}
+
+.links a {
+    padding:1vh;
+    text-decoration: none;
+    transition: color 0.2s linear;   
+}
+
+.links a:hover {
+    color: rgb(137, 97, 207);    
+}
+
+main {
+    width: 80vw;
+    height: 80vh;
+    background: linear-gradient(329.54deg,  #f779a3 0%, #7096e7  100%);
+    border-radius: 4px;
+    margin: auto; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container {
+    text-align: center;
+    max-width: 500px;
+}
+
+.about-challenge {
+    margin: 10vh 0 15vh 0;
+}
+
+main .content {    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8vh;
+}
+
+.content a {
+    padding: 2vh;
+    border: 1.5px solid rgb(42, 1, 109);
+    border-radius: 4px;
+
+    font: 18px 'Nunito', sans-serif;
+    font-weight: bold;
+    color: rgb(42, 1, 109);
+
+    text-decoration: none;
+    transition: background-color .5s;
+    
+}
+
+.content a:hover {
+    background:  #5b6fdf ;
+    color:#f84480
+
+}
+
+.content .disable {
+    border: 2px solid rgba(42, 1, 109, 0.438);
+    color: rgba(42, 1, 109, 0.479);
+    pointer-events: none;
+}
+
