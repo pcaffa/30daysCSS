@@ -12,6 +12,7 @@ body {
     color: rgb(42, 1, 109);
 }
 
+
 header {
     font: 22px 'Nunito', sans-serif;
     font-weight: bold;
@@ -44,7 +45,7 @@ main {
 
 main .container {
     text-align: center;
-    max-width: 500px;
+    max-width: 33vw;
 }
 
 .about-challenge {
@@ -83,3 +84,33 @@ main .content {
     pointer-events: none;
 }
 
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+
+    main .container {
+        font-size: 14px;
+        max-width: 73vw;
+    }
+ 
+    main .content {    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2vh;
+    }
+
+    .content a {
+        padding: 1.5vh; 
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 400px) { 
+    main .container {
+        font-size: 12px;
+        max-width: 70vw;
+    }
+
+}

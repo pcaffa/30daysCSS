@@ -1,0 +1,73 @@
+button {
+    width: 45vw;
+    height: 20vh;
+    background:none;
+    border: .8vh solid rgb(42, 1, 109);
+
+    color: #ffadc8;
+    text-transform: uppercase;
+    font: 30px 'Nunito', sans-serif;
+    font-weight: 700;
+    
+    cursor: pointer;
+    position: relative;
+}
+
+button::before, button::after {
+    content: " ";
+    position: absolute;
+    width: 5vw;
+    height: .8vh;
+    background:white;
+    transform: skewX(50deg);
+    transition: .8s linear;
+}
+
+button::before
+{
+    top: -0.8vh;
+    left: 10%;
+}
+
+button::after
+{
+    bottom: -0.8vh;
+    right: 10%;
+}
+
+button:hover::before
+{
+    left: 80%;
+}
+
+button:hover::after
+{
+    right: 80%;
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    button {
+        width: 80vw;
+        height: 10vh;
+        font-size: 15px;          
+    }
+
+    button::before, button::after {
+        content: " ";
+        position: absolute;
+        width: 9vw;
+        height: 1vh;
+        background:rgb(255, 255, 255);
+    }
+
+    button::before
+    {
+        top: -0.88vh;
+    }
+    button::after
+    {
+        bottom: -0.9vh;
+    }
+}

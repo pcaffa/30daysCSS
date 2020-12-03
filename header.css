@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: inline;
+
+    font: 18px 'Nunito', sans-serif;
+    color: rgb(42, 1, 109);
+}
+
+header {
+    font: 22px 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 2vw;
+    text-align: center;
+    background:#ffadc8;
+    border-bottom: 2px solid  #fd76a3;
+}
+
+.links a {
+    padding:1vh;
+    text-decoration: none;
+    transition: color 0.2s linear;   
+}
+
+.links a:hover {
+    color: rgb(137, 97, 207);    
+}
+
+main {    
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
