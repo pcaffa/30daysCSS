@@ -79,8 +79,8 @@ main .content {
 }
 
 .content .disable {
-    border: 2px solid rgba(42, 1, 109, 0.438);
-    color: rgba(42, 1, 109, 0.479);
+    border: 2px solid rgba(42, 1, 109, 0.24);
+    color: rgba(42, 1, 109, 0.13);
     pointer-events: none;
 }
 

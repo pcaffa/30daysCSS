@@ -1,7 +1,16 @@
 # 🚀 30 dias de CSS
 
+![Projects](gif-30dayscss.gif)
+
+<p align="center"> 
+  <a href="pamelacaffa-30dayscss.netlify.app" target="_blank">Demo on Netlify
+  </a>
+</p>
+
+<p>&nbsp;&nbsp;</p>
+
 ## 🎯 Objetivo
-Comecei o desafio no dia 1º de Dezembro de 2020 com o objetivo de aprimorar os meus conhecimentos em HTML5 e CSS3. Fui inspirada por várias pessoas do meu LinkedIn e 2 delas são [JulianePires](https://github.com/JulianePires/30diasDeCSS) e [@MilenaCarecho](https://github.com/MilenaCarecho/30diasDeCSS#id01) 
+Comecei o desafio no dia 1º de Dezembro de 2020 com o objetivo de aprimorar os meus conhecimentos em HTML5 e CSS3. Fui inspirada por várias pessoas do meu LinkedIn e 2 delas são [JulianePires](https://github.com/JulianePires/30diasDeCSS) e [MilenaCarecho](https://github.com/MilenaCarecho/30diasDeCSS#id01) 
 
 <p>&nbsp;&nbsp;</p>
 

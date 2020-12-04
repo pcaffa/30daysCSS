@@ -1,0 +1,72 @@
+main .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 70vh;
+}
+
+span {
+    width: 7vw;
+    height: 13vh;
+    border-radius: 50%;
+    background: lavender;
+    border: 0.5px solid darkgray;
+    box-shadow: 2px 5px 10px black, inset -10px -10px 10px darkgray, inset 3px 3px 5px #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span:hover {
+    animation: bounce 2.5s  ease-in-out infinite;
+}
+
+span a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+span:hover a.fa-html5{
+    color: #DD4B25;
+}
+
+span:hover a.fa-css3-alt{
+    color: #0273B7;
+}
+
+span:hover a.fa-js-square{
+    color: #DD9D27;
+}
+
+span:hover a.fa-react{
+    color: #5DD3F3;
+}
+
+span:hover a.fa-bootstrap{
+    color: #533C78;
+}
+
+@keyframes bounce {
+    0% {transform: scale(1,1) translateY(0);}
+    5% {transform: scale(1.1,0.9) translateY(0);}
+    25% {transform: scale(0.9,1.1) translateY(-150px);}
+    50% {transform: scale(1.1,0.9) translateY(0);}
+    60% {transform: scale(0.9,1.1) translateY(-100px);}
+    70% {transform: scale(1.1,0.9) translateY(0);}
+    100% {transform: scale(1,1) translateY(0);}
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    span {
+        height: 5vh;
+    }
+
+    span a {
+        font-size: 12px;
+    }
+}
