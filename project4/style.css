@@ -1,0 +1,71 @@
+main .loader {
+    width: 80vw;
+    height: 70vh;
+    margin-top: 20vw;
+    margin-left: 90vh;
+
+    position: relative;
+}
+
+span {
+    position: absolute;
+    width: 5vw;
+    height: 10vh;
+    
+    background:  rgb(146, 58, 247);
+    border-radius: 4px;
+    animation: chase 2s linear infinite;
+}
+
+span:nth-child(2)
+{
+    background: rgb(167, 96, 248);
+    animation-delay: 0.7s;
+}
+
+span:nth-child(1)
+{
+    background: rgb(206, 170, 247);
+    animation-delay: 1.4s;
+}
+
+@keyframes chase
+{
+    0% {top: 0; left: 0;}
+    12.5% { top: 0; left: 6vw;}
+    25% { top: 0; left:  6vw;}
+    37.5% { top: 13vh; left:  6vw;}
+    50% { top: 13vh; left: 6vw;}
+    62.5% { top: 13vh ; left: 0;}
+    75% { top: 13vh ; left: 0;}
+    82.5% { top: 0; left: 0;}
+    100% { top: 0; left: 0;}
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+
+    main .loader {
+        margin-top: 80vw;
+        margin-left: 20vh;
+    }
+
+    span {
+        width: 12vw;
+        height: 7vh;
+    }
+
+    @keyframes chase
+    {
+        0% {top: 0; left: 0;}
+        12.5% { top: 0; left: 15vw;}
+        25% { top: 0; left:  15vw;}
+        37.5% { top: 10vh; left:  15vw;}
+        50% { top: 10vh; left: 15vw;}
+        62.5% { top: 10vh ; left: 0;}
+        75% { top: 10vh ; left: 0;}
+        82.5% { top: 0; left: 0;}
+        100% { top: 0; left: 0;}
+    }
+}
