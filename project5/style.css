@@ -1,0 +1,102 @@
+#body-lamp {
+    background: #131313;
+}
+
+.container {
+    max-width: 100vw;
+ 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container img {
+    width: 20vw;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.container h2 {
+    margin-top: 3vw;
+    font-size: 2em;
+    color: #6C6A6A;
+}
+
+.container .icones {
+    margin-top: 8vh;
+    width: 60vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    visibility: hidden;
+}
+
+.container .icones .fab {
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.container .icones .fa-html5 {
+    color: #F16529;
+}
+
+.container .icones .fa-css3-alt {
+    color: #2965F1;
+}
+
+.container .icones .fa-js-square {
+    color: #F7DF1E;
+}
+
+.container .icones .fa-bootstrap {
+    color: #563D7C;
+}
+
+.container .icones .fa-react {
+    color: #00D8FF;
+}
+
+.container .credits {
+    font-size: .5em;
+    text-decoration: none;
+    color: #6C6A6A;
+    margin-top: 5vh;
+}
+
+.container .credits a {
+    text-decoration: none;
+    color: #292929;
+    position: relative;
+}
+
+.container img:hover {
+    filter: drop-shadow(0px -6px 11px rgba(253, 243, 152, 0.95));
+}
+
+.container img:hover ~ h2 {
+    color: white;
+    text-shadow: 0px 4px 6px #F7DF1E;
+}
+
+.container img:hover ~ .icones {
+    visibility: visible;
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    .container h2 {
+        font-size: 1em;
+    }
+
+    .container .icones .fab{
+        font-size: 1.5em;
+    }
+
+    .container .credits {
+        font-size: .4em;
+    }
+}
