@@ -3,9 +3,10 @@
 ![Projects](gif-30dayscss.gif)
 
 <p align="center"> 
-  <a href="pamelacaffa-30dayscss.netlify.app" target="_blank">Demo on Netlify
+  <a href="https://pamelacaffa-30dayscss.netlify.app/" target="_blank">Demo on Netlify
   </a>
 </p>
+
 
 <p>&nbsp;&nbsp;</p>
 
