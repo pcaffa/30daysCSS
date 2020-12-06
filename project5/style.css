@@ -4,7 +4,8 @@
 
 .container {
     max-width: 100vw;
- 
+    height: 80vh;
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
