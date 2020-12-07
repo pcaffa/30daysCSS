@@ -11,7 +11,7 @@
 <p>&nbsp;&nbsp;</p>
 
 ## 🎯 Objetivo
-Comecei o desafio no dia 1º de Dezembro de 2020 com o objetivo de aprimorar os meus conhecimentos em HTML5 e CSS3. Fui inspirada por várias pessoas do meu LinkedIn e 2 delas são [JulianePires](https://github.com/JulianePires/30diasDeCSS) e [MilenaCarecho](https://github.com/MilenaCarecho/30diasDeCSS#id01) 
+Comecei o desafio no dia 1º de Dezembro de 2020 com o objetivo de aprimorar os meus conhecimentos em HTML5 e CSS3. Fui inspirada por várias pessoas do meu LinkedIn e 2 delas são [Juliane Pires](https://github.com/JulianePires/30diasDeCSS) e [Milena Carecho](https://github.com/MilenaCarecho/30diasDeCSS#id01) também segui alguns tutoriais desses canais: [Coding Artist](https://www.youtube.com/channel/UC15exV5s79D_aYGADudlwpQ) e [DarkCode](https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw)
 
 <p>&nbsp;&nbsp;</p>
 
