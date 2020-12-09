@@ -37,3 +37,12 @@
 .btn:hover::before{
     height: 190%;
 }
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    .btn {
+        padding: 2vh 3vw;
+        font: 1em 'Poppins', sans-serif;
+    }
+}
