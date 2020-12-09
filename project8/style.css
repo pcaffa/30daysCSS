@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+.contain {
+    display: grid;
+    height: 100vh;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 50%;
+    perspective-origin: 50%;
+    place-items: center;
+}
+
+.loader {
+    height: 140px;
+    width: 550px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 4s infinite linear;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg);
+    }
+    20% {
+        transform: rotateX(0deg);
+    }
+    25% {
+        transform: rotateX(-90deg);
+    }
+    45% {
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-180deg);
+    }
+    70% {
+        transform: rotateX(-180deg);
+    }
+    75% {
+        transform: rotateX(-270deg);
+    }
+    95% {
+        transform: rotateX(-270deg);
+    }
+    100% {
+        transform: rotateX(-360deg);
+    }
+} 
+
+.face {
+    height: 100%;
+    width: 100%;
+    font: 60px 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    padding: 26px;
+    letter-spacing: 20px;
+}
+
+.front {
+    background-color: #888ae9;
+    color: #ffffff;
+    transform: translateZ(70px);
+}
+
+.back {
+    background-color: #888ae9 ;
+    color: #ffffff;
+    transform: translateZ(-70px)  rotateX(180deg) ;
+}
+
+.top {
+    background-color: #ffadc8;
+    color: #000000;
+    transform: rotateX(-270deg) translateY(-70px);
+    transform-origin: top center;
+}
+
+.bottom {
+    background-color: #ffadc8;
+    color: #000000;
+    transform: rotateX(-90deg) translateY(70px) ;
+    transform-origin: bottom center;
+}
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    .loader {
+        height: 70px;
+        width: 330px;
+    }
+    
+    .face {
+        font: 20px 'Poppins', sans-serif;
+        padding: 20px;
+    }
+
+    .front {
+        transform: translateZ(35px);
+    }
+    
+    .back {
+        transform: translateZ(-35px)  rotateX(180deg) ;
+    }
+    
+    .top {
+        transform: rotateX(-270deg) translateY(-35px);
+    }
+    
+    .bottom {
+        transform: rotateX(-90deg) translateY(35px) ;
+    }
+}
