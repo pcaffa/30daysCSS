@@ -1,0 +1,39 @@
+.btn {
+    border: 2px solid rgb(139, 23, 8);
+    background: none;
+    color: rgb(139, 23, 8);
+    padding: 3vh 4vw;
+    font: 2em 'Poppins', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;    
+    position: relative;
+    
+    overflow: hidden;
+    transition: all 0.8s ease .1s;
+}
+
+.btn:hover
+{
+    color: white;
+    border-radius: 2px;
+}
+
+.btn::before
+{
+    content: '';    
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(170deg, rgb(139, 23, 8) 0% , rgb(245, 109, 92) 100%);
+    border-radius: 0 0 75% 75%;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    transition: all 0.8s;
+}
+
+.btn:hover::before{
+    height: 190%;
+}
