@@ -269,10 +269,10 @@ p {
 }
 
 /*PHONE VERSION*/
-@media (min-width: 370px) {
+@media (max-width: 800px) and (min-width: 370px){
     .bars .bar-6 {
         top: -1.1vh;
-        left: 20.5vw;
+        left: 21.5vw;
         height: 10vh;
         border-radius: 4px 4px 0 0;
     }
@@ -295,5 +295,4 @@ p {
     p {
         font-size: 37px;
     }
-
  }
