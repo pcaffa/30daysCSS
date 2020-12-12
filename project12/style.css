@@ -270,13 +270,15 @@ p {
 
 /*PHONE VERSION*/
 @media (min-width: 370px) {
-    .bars .bar-7{
-        top: -2.7%;
-    }
-
     .bars .bar-6 {
+        top: -1vh;
         left: 20.5vw;
         height: 9.5vh;
+    }
+
+    .bars .bar-7{
+        top: -2.8%;
+        border-radius: 2.3px 0 0 0;
     }
 
     .letter .cicle-2{
