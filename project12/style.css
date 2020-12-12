@@ -273,12 +273,13 @@ p {
     .bars .bar-6 {
         top: -1vh;
         left: 20.5vw;
-        height: 9.5vh;
+        height: 10vh;
+        border-radius: 4px 4px 0 0;
     }
 
     .bars .bar-7{
         top: -2.8%;
-        border-radius: 2.3px 0 0 0;
+        border-radius: 3px 0 0 0;
     }
 
     .letter .cicle-2{
