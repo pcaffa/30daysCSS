@@ -173,7 +173,7 @@ p {
 /*PHONE VERSION*/
 @media (max-width: 800px) { 
     .logo {
-        margin-left: 4vw;
+        margin-left: 0;
     }
 
     .slogan {
