@@ -271,15 +271,16 @@ p {
 /*PHONE VERSION*/
 @media (min-width: 370px) {
     .bars .bar-6 {
-        top: -1vh;
+        top: -1.1vh;
         left: 20.5vw;
         height: 10vh;
         border-radius: 4px 4px 0 0;
     }
 
     .bars .bar-7{
-        top: -2.8%;
+        top: -1.2vh;
         border-radius: 3px 0 0 0;
+        height: 10.2vh;
     }
 
     .letter .cicle-2{
