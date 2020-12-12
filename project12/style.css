@@ -178,7 +178,7 @@ p {
     }
     .bars ,.letter, .number, .slogan {
         width: 90vw;
-        gap: 15px;
+        gap: 5vw;
     }
 
     
