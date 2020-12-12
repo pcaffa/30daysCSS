@@ -1,0 +1,189 @@
+body {
+    background-color: #e2f4f8;     
+}
+.logo {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    margin-left: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bars ,.letter, .number, .slogan {
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items:baseline;
+    gap: 5px;
+    transition-timing-function: ease;
+}
+
+.bars .bar-1{
+    background-color: #009CC0;
+    width: 2%;
+    height: 5%;
+    transition-duration: 1s;
+}
+
+.bars .bar-2{
+    background-color: #009CC0;
+    width: 2%;
+    height: 10%;
+    transition-duration: 2s;
+}
+
+.bars .bar-3{
+    background-color: #009CC0;
+    width: 2%;
+    height: 15%;
+    transition-duration: 3s;
+}
+
+.bars .bar-4{
+    background-color: #009CC0;
+    width: 2%;
+    height: 20%;
+    transition-duration: 4s;
+}
+
+.bars .bar-5{
+    background-color: #009CC0;
+    width: 2%;
+    height: 25%;
+    transition-duration: 5s;
+}
+
+.bars .bar-6{
+    background-color: #009CC0;
+    width: 2%;
+    height: 20%;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 17%;
+    top: -1%;    
+    transition-duration: 6s;
+}
+
+.bars .bar-7{
+    background-color: #009CC0;
+    width: 2%;
+    height: 22.2%;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 25%;
+    top: -2.2%;
+    border-radius: 1.5px 0 0 0;
+    transition-duration: 6s;
+}
+
+.bars .bar-8{
+    background-color: #e2f4f8;
+    width: 1%;
+    height: 25%;
+    position: absolute;
+    left: 14%;
+    transition-duration: 6s;
+}
+
+.bars .bar-9{
+    background-color: #009CC0;
+    width: 2%;
+    height: 25%;
+    position: absolute;
+    left: 30%;
+    transition-duration: 6s;
+}
+
+.letter .cicle-1{
+    background-color: #242222;
+    width: 85px;
+    height: 74px;
+    border-radius: 50%;
+    position: absolute;
+    left: 33%;
+    transition-duration: 6s;
+}
+
+ .letter .cicle-2{
+    background-color: #e2f4f8;
+    width: 58px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    left: 36%;
+    top: 13px;
+    transition-duration: 6s;
+}
+
+.letter .trapezium {
+    border-bottom: 45px solid #e2f4f8;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+
+    position: absolute;
+    left: 45%;
+    top:8px;
+
+    transform: rotate(35deg);
+    transition-duration: 6s;
+
+}
+
+.number .bar-1{
+    background-color: #009CC0;
+    width: 2%;
+    height: 6%;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 50.5%;
+    top: 0.1%;
+    border-radius: 2px 0px 0px 0px;
+    transition-duration: 6s;
+}
+
+.number .bar-2{
+    background-color: #009CC0;
+    width: 2%;
+    height: 25%;
+    position: absolute;
+    left: 52%;
+    transition-duration: 6s;
+}
+
+.slogan {
+    left: -0.6%;
+    top: 25%;
+}
+
+p {
+    font-size: 35px;
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+    transition-duration: 6s;
+}
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    .logo {
+        margin-left: 4vw;
+    }
+
+    .slogan {
+        top: 30%;
+    }
+}
+
+/*PHONE VERSION*/
+@media (min-width: 370px) {
+    .bars .bar-7{
+        top: -2.0%;
+    }
+ }
