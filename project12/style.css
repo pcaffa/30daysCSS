@@ -173,20 +173,140 @@ p {
 /*PHONE VERSION*/
 @media (max-width: 800px) { 
     .logo {
+        width: 100vw;
         margin-left: 0;
     }
     .bars ,.letter, .number, .slogan {
-        width: 400px;
+        width: 90vw;
     }
+
+    
+.bars .bar-1{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 5%;
+    transition-duration: 1s;
+}
+
+.bars .bar-2{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 10%;
+    transition-duration: 2s;
+}
+
+.bars .bar-3{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 15%;
+    transition-duration: 3s;
+}
+
+.bars .bar-4{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 20%;
+    transition-duration: 4s;
+}
+
+.bars .bar-5{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 25%;
+    transition-duration: 5s;
+}
+
+.bars .bar-6{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 20%;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 20vw;
+    top: -1vh;  
+    transition-duration: 6s;
+}
+
+.bars .bar-7{
+    width: 2.2vw;
+    height: 10.1vh;
+    left: 31.8vw;
+    top: -1.1vh;
+}
+
+.bars .bar-8{
+    background-color: #e2f4f8;
+    width: 1.3vw;
+    height: 25%;
+    position: absolute;
+    left: 16.5vw;
+    transition-duration: 6s;
+}
+
+.bars .bar-9{
+    background-color: #009CC0;
+    width: 2.2vw;
+    height: 25%;
+    position: absolute;
+    left: 38vw;
+    transition-duration: 6s;
+}
+
+.letter .cicle-1{
+    width: 85px;
+    left: 41vw;
+}
+
+ .letter .cicle-2{
+    background-color: #e2f4f8;
+    width: 58px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45vw;
+    top: 2vh;
+    transition-duration: 6s;
+}
+
+.letter .trapezium {
+    border-bottom: 45px solid #e2f4f8;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+
+    position: absolute;
+    left: 56vw;
+    top: 1vh;
+
+    transform: rotate(35deg);
+    transition-duration: 6s;
+
+}
+
+.number .bar-1{
+    width: 2.2vw;
+    height: 6%;
+    left: 65vw;
+    top: 0.1%;
+}
+
+.number .bar-2{
+    width: 2.2vw;
+    height: 25%;
+    left: 67vw;
+}
+
+p {
+    font-size: 32px;
+}
 
     .slogan {
         top: 30%;
     }
 }
 
-/*PHONE VERSION*/
+/*PHONE VERSION
 @media (min-width: 370px) {
     .bars .bar-7{
         top: -2.0%;
     }
- }
+ }/*
