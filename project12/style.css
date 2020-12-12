@@ -273,14 +273,14 @@ p {
     .bars .bar-6 {
         top: -1.1vh;
         left: 21.5vw;
-        height: 10vh;
+        height: 9.9vh;
         border-radius: 4px 4px 0 0;
     }
 
     .bars .bar-7{
         top: -1.2vh;
         border-radius: 3px 0 0 0;
-        height: 10.2vh;
+        height: 10vh;
     }
 
     .letter .cicle-2{
