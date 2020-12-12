@@ -175,6 +175,9 @@ p {
     .logo {
         margin-left: 0;
     }
+    .bars ,.letter, .number, .slogan {
+        width: 400px;
+    }
 
     .slogan {
         top: 30%;
