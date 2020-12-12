@@ -1,0 +1,61 @@
+.body-hand {
+    background: radial-gradient(farthest-corner, #b267d4 0%, #5e0488 100%) fixed; 
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: inset 0px 4px 0px #001000;
+    border-radius: 50%;
+
+    border: 0.5px solid  #32059c;
+    box-shadow: 0px 0px 20px #32059c, inset -10px -10px 10px darkgray, inset 3px 3px 5px #FFF;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    animation: bounce 5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {transform: scale(1,1) translateY(0);}
+    5% {transform: scale(1.1,0.9) translateY(0);}
+    25% {transform: scale(0.9,1.1) translateY(-200px);}
+    50% {transform: scale(1.1,0.9) translateY(0);}
+    75% {transform: scale(0.9,1.1) translateY(-200px);}
+    95% {transform: scale(1.1,0.9) translateY(0);}
+    100% {transform: scale(1,1) translateY(0);}
+}
+
+.hand {
+    position: relative;
+    top: 13vh;
+    left: 3vw;
+    animation: pushing 5s ease-in-out infinite;
+}
+
+@keyframes pushing {
+    0% {transform: translateY(0);}
+    5% {transform: rotateX(35deg) translateY(0);}
+    25% {transform: translateY(-120px);}
+    50% {transform: rotateX(35deg) translateY(0);}
+    75% {transform: translateY(-120px);}
+    95% {transform: skewY(-10deg) translateY(0);}
+    98% {transform: skewX(20px) translateY(0);}
+    100% {transform: translateY(0);}
+}
+
+
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px) { 
+    .ball {
+        top: 55%;
+        left: 40%;
+    }
+
+    .hand {
+        top: 20vh;
+    }
+}
