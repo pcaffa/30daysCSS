@@ -1,0 +1,75 @@
+button {
+    width: 14vw;
+    height: 10vh;
+    background: #8d9fbd;
+    border: 3px  solid #2d334d;
+    position: relative;
+    cursor: pointer;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    background: #8d9fbd;
+    width: 100%;
+    height: 100%;
+    border: 3px  solid #202538;
+    transition: 0.3s;
+}
+
+button:before {
+    bottom: -1.5vh;
+    left: -0.7vw;
+    z-index: -1;
+}
+
+button:hover:before {
+    bottom: -0.4vh;
+    left: -0.2vw;
+}
+
+button:after {
+    content: attr(data-text);
+    color: #202538;
+    font: 1.5em 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    display:grid;
+    place-items: center;
+    top: -1.5vh;
+    right: -0.7vw;
+    z-index: 1;
+}
+
+button:hover:after {
+    top: -0.4vh;
+    right: -0.2vw;
+    background: #31374e;
+    color: #8e9db6;
+}
+
+
+/*PHONE VERSION*/
+@media(max-width: 800px) {
+    button {
+        width: 36vw;
+        height: 8vh;
+    }
+
+    button:before {
+        left: -2.7vw;
+    }
+
+    button:after {
+        font: 1em 'Poppins', sans-serif;
+        right: -2.7vw;
+    }
+
+    button:hover:before {
+        left: -0.8vw;
+    }
+
+    button:hover:after {
+        right: -0.8vw;
+    }
+}
