@@ -1,0 +1,117 @@
+.container {
+    font: 1em 'Lato', sans-serif;
+    position: relative;
+    width: 80vw;
+    top: 2vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3vw;
+}
+
+.card {
+    max-width: 20vw;
+    height: 35vh;
+
+    margin: 2vh 1vh;
+    padding: 2vh 1.5vw;
+
+    position: relative;
+    background: whitesmoke;
+    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    height: 70vh;
+    background: rgba(230, 230, 230, 0.774);
+    box-shadow: 0 5px 20px rgb(102, 4, 4);
+}
+
+.card .cardImg {
+    width: 18vw;
+    height: 30vh;
+    top: -5vh;
+    left: 1vw;
+
+    position: relative;
+    z-index: 1;
+    border-radius: 5%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card .cardImg img {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.card .cardContent {
+    position: relative;
+    margin-top: -14vw;
+    padding: 1vh 1.5vw;
+    text-align: center;
+    color: #111111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .cardContent{
+    margin-top: 2vw;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.cardContent h2{
+    font-family: 'Pangolin', sans-serif;
+}
+
+.cardContent p {
+    margin-bottom: 3vh;
+}
+
+.cardContent a {
+    text-decoration: none;
+    font: 1em 'Pangolin', sans-serif;
+    color: white;
+    background: rgb(105, 101, 101);
+
+    padding: 1vh 3vw;
+    border-radius: 10%;
+}
+
+.cardContent a:hover {
+    background: rgb(146, 145, 145);
+    box-shadow: 0 5px 20px rgba(51, 51, 51, 0.575);
+}
+
+
+/*PHONE VERSION*/
+@media (max-width:800px) {
+    .container {
+        font: .5em 'Lato', sans-serif;
+    }
+
+    .card {
+        max-width: 70vw;
+        height: 9vh;
+    }
+
+    .card:hover{
+        height: 20vh;
+    }
+
+    .card .cardImg {
+        height: 6vh;
+    }
+
+    .card:hover .cardContent {
+        margin-top: -2vw;
+    }
+}
