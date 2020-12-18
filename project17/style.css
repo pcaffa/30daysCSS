@@ -1,0 +1,95 @@
+.container {
+    position: relative;
+    width:80vw;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card {
+    position: absolute;
+    width: 18vw;
+    height: 38vh;
+    top: 15vh;
+    left: 40vw;
+    background: #1cad7d;
+    box-shadow: 25px 25px 100px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-10vw,calc(5vh * var(--i))) rotate(40deg) skew(-20deg,-10deg);
+    z-index: calc(-1 * var(--i));
+    transition: .7s;
+}
+
+.container .card:nth-child(1) {
+    opacity: 1;
+}
+
+.container .card:nth-child(2) {
+    opacity: 0.6;
+}
+
+.container .card:nth-child(3) {
+    opacity: 0.4;
+}
+
+.container:hover .card {
+    position: absolute;
+    left: 30vw;
+
+    z-index: 1;
+    opacity: 1;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+    transform: translate(calc(20vw * var(--i)) ,-5vh) rotate(0) skew(0deg, 0deg);
+}
+
+.container .card .content {
+    text-align: center;
+    color: rgb(252, 252, 252);
+    font: 15px 'Poppins', sans-serif;
+    padding: 2vw;
+
+    opacity: 0;
+    transition: .5s;
+}
+
+.container:hover .card .content {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: calc(0.2s * var(--j));
+}
+
+.card .content h2 {
+    margin-bottom: 1vh;
+}
+
+.card .content p span {
+    color:rgb(156, 224, 182);;
+    font-weight: bold;
+}
+
+@media (max-width:800px) {
+
+    .container {
+        width:90vw;
+        height: 50vh;
+    }
+    .container .card {
+        width: 27vw;
+        height: 24vh;
+    }
+
+    .container:hover .card {
+        transform: translate(calc(30vw * var(--i)) ,5vh) rotate(0) skew(0deg, 0deg);
+    }
+
+    .container .card .content {
+        font: 7px 'Poppins', sans-serif;
+    }
+
+}
