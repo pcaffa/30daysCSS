@@ -1,0 +1,87 @@
+.container {
+    position: absolute;
+    width: 19vw;
+    height: 28vh;
+    margin:auto;
+    border-top: 1.5vw solid #fbb226;
+    border-radius: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ball {
+    position: relative;
+    width: .4vw;
+    height: 31vh;
+    background-color:#fbb226;
+    transform-origin: top;
+}
+
+.ball:after {
+    position: absolute;
+    content: " ";
+    background-color:rgb(223, 49, 49);
+    border-radius: 50%;
+    width: 3.8vw;
+    height: 7.5vh;
+    left: -1.6vw;
+    bottom: -6vh;
+}
+
+.ball:first-child {
+    animation: swing1 2s infinite linear;
+}
+
+.ball:last-child {
+    animation: swing2 2s 1s infinite linear;
+}
+
+@keyframes swing1 {
+    25% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swing2 {
+    25% {
+        transform: rotate(-50deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*PHONE VERSION*/
+@media (max-width:800px) {
+
+    .container {
+        width: 35vw;
+        height: 23vh;
+        border-top: 3vw solid #fbb226
+    }
+
+    .ball {
+        position: relative;
+        width: .8vw;
+        height: 24vh;
+    }
+
+    .ball:after {
+        width: 7vw;
+        height: 4.5vh;
+        left: -3vw;
+        bottom: -4vh;
+    }
+}
