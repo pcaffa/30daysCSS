@@ -1,0 +1,206 @@
+body {
+    background: #171717;
+}
+
+.container {
+    width: 80vh;
+    height: 60vh;
+    border: 12px solid #4c1d95;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px #5b21b6, inset 0px 0px 10px 8px #5b21b6;
+}
+
+.container .pacman{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #facc15;
+    position: relative;
+    margin-top: 22px;
+    transform: translateX(15px);
+    animation: round 10s ease-in-out infinite;
+}
+
+.container .pacman .pacmanOlho {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 20px;
+    right: 40px;
+    background: #262626;
+}
+
+.container .pacman .pacmanBoca {
+    background: #171717;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+    animation: eat .7s infinite;
+}
+
+.container .pacmanComida {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #22d3ee;
+    border-radius: 50%;
+    top: 34%;
+    left: 50%;
+    animation: food1 10s  infinite;
+}
+
+.container .pacmanComida:nth-child(2){
+    background: #a3e635;
+    top: 50%;
+    left: 62%;
+    animation: food2 10s infinite;
+}
+
+.container .pacmanComida:nth-child(3){
+    background: #f87171;
+    top: 67%;
+    left: 50%;
+    animation: food3 10s infinite;
+}
+
+.container .pacmanComida:nth-child(4){
+    background: #f97316;
+    top: 55%;
+    left: 35%;
+    animation: food4 10s infinite;
+}
+
+/*ANIMATIONS*/
+
+@keyframes round {
+    0% {left: 5%; top: 0;}
+    20% {left: 75%; top: 0;}
+    22% {transform: rotate(90deg);}
+    40% {left: 75%; top: 60%;}
+    42% {transform: rotate(180deg);}
+    60% {left: 5%; top: 60%;}
+    62% {transform: rotate(270deg);}
+    80% {left: 5%; top: 0;}
+    81% {transform: rotate(360deg);}
+    100% {left: 5%; top: 0;}
+}
+
+@keyframes eat {
+    0% {clip-path: polygon(100% 74%, 44% 48%, 100% 21%);}
+    25% {clip-path: polygon(100% 60%, 44% 48%, 100% 40%);}
+    50% {clip-path: polygon(100% 50%, 44% 48%, 100% 50%);}
+    75% {clip-path: polygon(100% 59%, 44% 48%, 100% 35%);}
+    100% {clip-path: polygon(100% 74%, 44% 48%, 100% 21%);}
+}
+
+@keyframes food1{
+    0% {opacity: 1;}
+    9% { opacity: 1;}
+    10% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes food2{
+    0% {opacity: 1;}
+    28% { opacity: 1;}
+    29% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes food3{
+    0% {opacity: 1;}
+    48% { opacity: 1;}
+    49% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes food4{
+    0% {opacity: 1;}
+    65% { opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px){
+    .container {
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .container .pacman {
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .container .pacman .pacmanOlho {
+        width: 5px;
+        height: 5px;
+        top: 12px;
+        right: 21px;
+    }
+
+    .container .pacman .pacmanBoca {
+        width: 53px;
+        height: 53px;
+    }
+
+    .container .pacmanComida {
+        width: 10px;
+        height: 10px;
+        top: 28%;
+    }
+
+    .container .pacmanComida:nth-child(2){
+        left: 82%;
+    }
+
+    .container .pacmanComida:nth-child(3){
+        top: 66%;
+    }
+
+    .container .pacmanComida:nth-child(4){
+        top: 48%;
+        left: 16%;
+    }
+
+    /*ANIMATIONS*/
+
+    @keyframes round {
+        0% {left: 5%; top: 0;}
+        20% {left: 80%; top: 0;}
+        30% {transform: rotate(90deg);}
+        40% {left: 80%; top: 80%;}
+        42% {transform: rotate(180deg);}
+        60% {left: 5%; top: 80%;}
+        62% {transform: rotate(270deg);}
+        80% {left: 5%; top: 0;}
+        81% {transform: rotate(360deg);}
+        100% {left: 5%; top: 0;}
+    }
+
+    @keyframes food1{
+        0% {opacity: 1;}
+        8% { opacity: 1;}
+        9% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes food2{
+        0% {opacity: 1;}
+        29% { opacity: 1;}
+        30% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+
+    @keyframes food4{
+        0% {opacity: 1;}
+        69% { opacity: 1;}
+        70% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+}
