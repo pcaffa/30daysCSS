@@ -2,6 +2,17 @@ body {
     background: #171717;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    font: 2em 'Bungee Outline', cursive;
+    color: #facc15;
+    margin: -2vh 0 0 0;
+}
+
 .container {
     width: 80vh;
     height: 60vh;
@@ -46,7 +57,7 @@ body {
     height: 15px;
     background: #22d3ee;
     border-radius: 50%;
-    top: 34%;
+    top: 38%;
     left: 50%;
     animation: food1 10s  infinite;
 }
@@ -60,7 +71,7 @@ body {
 
 .container .pacmanComida:nth-child(3){
     background: #f87171;
-    top: 67%;
+    top: 70%;
     left: 50%;
     animation: food3 10s infinite;
 }
@@ -126,6 +137,12 @@ body {
 
 /*PHONE VERSION*/
 @media (max-width: 800px){
+
+    main h2 {
+        font: 2em 'Bungee Outline', cursive;
+        margin-top: -12vh;
+    }
+
     .container {
         width: 45vh;
         height: 50vh;
