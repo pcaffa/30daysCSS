@@ -127,7 +127,7 @@ body {
 /*PHONE VERSION*/
 @media (max-width: 800px){
     .container {
-        width: 50vh;
+        width: 45vh;
         height: 50vh;
     }
 
@@ -152,20 +152,23 @@ body {
     .container .pacmanComida {
         width: 10px;
         height: 10px;
-        top: 28%;
+        top: 28vh;
+        left: 50vw;
     }
 
     .container .pacmanComida:nth-child(2){
-        left: 82%;
+        top: 45vh;
+        left: 80vw;
     }
 
     .container .pacmanComida:nth-child(3){
-        top: 66%;
+        top: 66vh;
+        left: 50vw;
     }
 
     .container .pacmanComida:nth-child(4){
-        top: 48%;
-        left: 16%;
+        top: 48vh;
+        left: 21vw;
     }
 
     /*ANIMATIONS*/
