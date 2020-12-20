@@ -1,0 +1,21 @@
+.loading {
+	width: 100px;
+	height: 100px;
+    border-radius: 12px;
+	animation: loading 5s linear infinite;
+}
+
+@keyframes loading {
+	0% { 
+        transform: rotateX(0deg) rotateY(0deg); 
+        background-color: rgb(72, 3, 94);
+    }
+	50% { 
+        transform: rotateX(0deg) rotateY(180deg);
+        background-color: rgb(203, 120, 228);
+    }
+    100% { 
+        transform: rotateX(180deg) rotateY(180deg); 
+        background-color: rgb(72, 3, 94);
+    }
+}
