@@ -174,16 +174,16 @@ body {
     /*ANIMATIONS*/
 
     @keyframes round {
-        0% {left: 5%; top: 0;}
-        20% {left: 80%; top: 0;}
+        0% {left: 5vw; top: 0;}
+        20% {left: 62vw; top: 0;}
         30% {transform: rotate(90deg);}
-        40% {left: 80%; top: 80%;}
+        40% {left: 62vw; top: 40vh;}
         42% {transform: rotate(180deg);}
-        60% {left: 5%; top: 80%;}
+        60% {left: 5vw; top: 40vh;}
         62% {transform: rotate(270deg);}
-        80% {left: 5%; top: 0;}
+        80% {left: 5vw; top: 0;}
         81% {transform: rotate(360deg);}
-        100% {left: 5%; top: 0;}
+        100% {left: 5vw; top: 0;}
     }
 
     @keyframes food1{
