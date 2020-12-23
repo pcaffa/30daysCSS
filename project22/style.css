@@ -1,0 +1,59 @@
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 20vw;
+    padding: 2vh 1vw;
+
+   
+    font: 15px 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .5px; 
+
+    background-color: rgb(88, 5, 99);
+    color: rgb(255, 255, 255);
+    background-image: url('img/down-arrow2.png');
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    background-position: 16.5vw 1vh;
+  
+    border: 4px solid rgb(88, 5, 99);
+    border-radius: 5px;
+    box-shadow:0 0 20px rgba(20, 20, 30, .25);
+
+    outline: none;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:hover{
+    border: 4px solid rgb(149, 30, 165);
+}
+
+select option {
+    background-color:rgb(149, 30, 165);
+
+    font: 11px 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.2px;  
+}
+
+.selected {
+    display: none
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px){
+    select { 
+        width: 64vw;
+
+        font: 13px 'Poppins', sans-serif;
+        background-size: 2em;
+        background-position: 52vw 1.5v;
+    }
+}
