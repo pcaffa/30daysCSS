@@ -1,0 +1,175 @@
+body {
+    background: url('img/background.png');
+}
+
+.container {
+    width: 90vw;
+    height: 70vh;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;    
+    flex-wrap: wrap;
+}
+
+.sun {
+    width: 10vw;
+    height: 18vh;
+    background-color: #ffc21a;
+    border-radius: 0 200px 200px 0; 
+    box-shadow: 0 0 50px 5px #ff8c1a;
+    position: absolute;
+    left: -6vw;
+    top: 13vh;
+}
+
+.card:nth-child(1) {
+    margin-top: 4vh;
+}
+
+.card:nth-child(2) {
+    margin-top: 10vh;
+}
+
+.card:nth-child(3) {
+    margin-top: 16vh;
+}
+
+.card:nth-child(4) {
+    margin-top: 24vh;
+}
+
+.card:nth-child(5) {
+    margin-top: 32vh;
+}
+
+.card:nth-child(6) {
+    margin-top: 38vh;
+}
+
+.card:nth-child(7) {
+    margin-top: 44vh;
+}
+
+.card:nth-child(8) {
+    margin-top: 50vh;
+}
+
+.cardImg img {
+    max-width: 50px;
+    height: auto;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.cardContent {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: white;
+    padding-left: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    visibility: hidden;
+    z-index: 0;
+}
+
+.cardContent h2 {
+    align-self: center;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 30px;
+}
+
+.cardContent p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.cardImg:hover img  {
+    max-width: 160px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+.cardImg:hover ~ .cardContent {
+    width: 300px;
+    height: 300px;
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+
+/*PHONE VERSION*/
+@media (max-width: 800px){
+    .sun {
+        width: 17vw;
+        height: 15vh;
+        border-radius: 0 103px 110px 0;
+        left: -5vw;
+        top: 8vh;
+    }
+
+    .card:nth-child(1) {
+        margin-top: 10vh;
+    }
+
+    .card:nth-child(2) {
+        margin-top: 15vh;
+    }
+
+    .card:nth-child(3) {
+        margin-top: 19vh;
+    }
+
+    .card:nth-child(4) {
+        margin-top: 24vh;
+    }
+
+    .card:nth-child(5) {
+        margin-top: 30vh;
+    }
+
+    .card:nth-child(6) {
+        margin-top: 36vh;
+    }
+
+    .card:nth-child(7) {
+        margin-top: 41vh;
+    }
+    
+    .card:nth-child(8) {
+        margin-top: 46vh;
+    }
+
+    .cardImg img {
+        max-width: 20px;
+    }
+
+    .cardImg:hover img  {
+        max-width: 60px;
+    }
+
+    .cardImg:hover ~ .cardContent {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cardContent h2 {
+        margin-bottom: 7px;
+        font-size: 15px;
+    }
+    
+    .cardContent p {
+        font-size: 7px;
+    }
+}
