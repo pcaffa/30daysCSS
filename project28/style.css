@@ -213,3 +213,37 @@ body {
 .general:hover .container .content button {
     transform: translateY(-30px) scale(1.2,1.2);
 }
+
+/*PHONE VERSION*/
+@media (max-width: 800px){
+    .general a {
+        left: 24%;
+    }
+
+    .general a:nth-child(2) {
+        left: 36.5%;
+    }
+
+    .general a:nth-child(3) {
+        left: 48%;
+    }
+
+    .general a:nth-child(4) {
+        left: 63%;
+    }
+
+    .general .container .card::before {
+        top: 16%;
+    }
+}
+
+/*PHONE VERSION*/
+@media (max-width: 800px) and (min-width: 370px){
+    .general a {
+        top: 62%;
+    }
+
+    .general .container .card::before {
+        top: 19%;
+    }
+}
