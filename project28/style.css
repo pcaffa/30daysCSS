@@ -1,0 +1,215 @@
+:root {
+    --pink: #FDA4AF;
+    --darkPink: #BE123C;
+    --lightPink:#FFE4E6;
+    --lightBlue:#dbeafe;
+    --darkBlue: #1D4ED8;
+    --blue: #93c5fd;
+    --lightYellow: #fef08a;
+    --darkYellow: #FFE500;
+    --yellow: #fbbf24;
+    --orange:#fb923c;
+    --lightOrange: #fdba74;
+    --darkOrange:#ea580c;
+}
+
+body {
+    background: #1c1917;
+}
+
+.general {
+    font-family: 'Quicksand', sans-serif;
+    width: 300px;
+    height: 400px;
+}
+
+.general a {
+    position: absolute;
+    z-index: 10;
+    text-decoration: none;
+    font-size: 15px;
+    color: #BE123C;
+    font-weight: 600;
+    top: 67%;
+    left: 41%;
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover a {
+    transform: translateY(-45px) scale(1.1,1.1);
+}
+
+.general a:nth-child(2){
+    color: #1D4ED8;
+    left: 45.5%;
+}
+
+.general a:nth-child(3){
+    color: #eab308;
+    left: 50%;
+}
+
+.general a:nth-child(4){
+    color: #EA580C;
+    left: 55%;
+}
+
+.general a:focus ~ .container {
+    --color: var(--pink);
+    --darkColor: var(--darkPink);
+    --lightColor: var(--lightPink);
+}
+
+.general a:focus ~ .container .card .productImg{
+    background: url('img/pants-pink.png');
+}
+
+.general a:nth-child(2):focus ~ .container {
+    --color: var(--blue);
+    --darkColor: var(--darkBlue);
+    --lightColor: var(--lightBlue);
+}
+
+.general a:nth-child(2):focus ~ .container .card .productImg{
+    background: url('img/pants-blue.png');
+}
+
+.general a:nth-child(3):focus ~ .container {
+    --color: var(--yellow);
+    --darkColor: var(--darkYellow);
+    --lightColor: var(--lightYellow);
+}
+
+.general a:nth-child(3):focus ~ .container .card .productImg{
+    background: url('img/pants-yellow.png');
+}
+
+.general a:nth-child(4):focus ~ .container {
+    --color: var(--orange);
+    --darkColor: var(--darkOrange);
+    --lightColor: var(--lightOrange);
+}
+
+.general a:nth-child(4):focus ~ .container .card .productImg{
+    background: url('img/pants-orange.png');
+}
+
+.general .container {
+    width: 300px;
+    height: 400px;
+    --color: var(--pink);
+    --darkColor: var(--darkPink);
+    --lightColor: var(--lightPink);
+}
+
+.general .container .card {
+    width: 300px;
+    height: 400px;
+    background: var(--lightColor);
+    border-radius: 10px;
+    z-index: -10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.general .container .card::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    width: 300px;
+    height: 84px;
+    border-radius: 10px 10px 90px 90px;
+    background: var(--color);
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover .container .card::before {
+    height: 210px;
+    border-radius: 10px 10px 50px 50px;
+}
+
+.general .container .card .productImg{
+    width: 200px;
+    height: 200px;
+    background: url('img/pants-pink.png');
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover .container .card .productImg {
+    transform: translateY(-13px) scale(0.7,0.7);
+}
+
+.general .container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.general .container .content .productName{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--darkColor);
+    text-transform: uppercase;
+    margin: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover .container .content .productName {
+    transform: translateY(-60px) scale(1.2,1.2);
+}
+
+.container .content h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 5px var(--darkColor);
+    margin-bottom: 35px;
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover .container .content h3 {
+    transform: translateY(-36px) scale(1.2,1.2);
+    margin-bottom: 50px;
+}
+
+.general .container .content .colors {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover .container .content .colors{
+    transform: translateY(-40px)
+}
+
+.general .container .content .colors input[type="radio"] {
+    background-color: initial;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.general .container .content button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: white;
+    color: var(--darkColor);
+    border: 1px solid var(--darkColor);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.general:hover .container .content button {
+    transform: translateY(-30px) scale(1.2,1.2);
+}
