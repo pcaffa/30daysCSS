@@ -1,0 +1,210 @@
+body{
+    background-color: #c9acd1;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.box {
+    width: 200px;
+    height: 120px;
+    background-color: #ffff9d;
+    position: relative;
+    top: 200px;
+    left: 150px;
+    background-image: radial-gradient(#f7dd5e 5px, transparent 5px);
+    background-size: 35px 35px;
+    background-position: -5px -12px;
+}
+
+.b1, .b2 {
+    background-color: #ffff9d;
+    width: 50px;
+    height: 8px;
+    position: relative;
+}
+
+.b1 {
+    right: 48px;
+    transform: rotate(-20deg);
+    transform-origin: right;
+}
+
+.b2 {
+    left: 198px;
+    bottom: 8px;
+    transform: rotate(20deg);
+    transform-origin: left;
+}
+
+.cat {
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.box:hover .cat {
+    transform: translateY(-60px);
+}
+
+.face {
+    width: 120px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.lower {
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    border-radius: 0 0 140px 140px;
+    position: relative;
+    top: 60px;
+    right: 10px;
+}
+
+.ear-l, .ear-r {
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid white;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: relative;
+}
+
+.ear-l {
+    bottom: 55px;
+    transform: rotate(-40deg);
+} 
+
+.ear-r {
+    bottom: 90px;
+    left: 87px;
+    transform: rotate(40deg);
+}
+
+.eye-l, .eye-r {
+    width: 13px;
+    height: 15px;
+    position: relative;
+}
+
+.eye-l {
+    bottom: 65px;
+    left: 20px;
+} 
+
+.eye-r {
+    bottom: 80px;
+    left: 83px;
+}
+
+.eye {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+
+.nose {
+    width: 0;
+    height: 0;
+    border-top: 10px solid pink;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: relative;
+    bottom: 72px;
+    left: 48px;
+}
+
+.hat {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #ff6347;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    position: relative;
+    bottom: 220px;
+    left: 40px;
+    transform: rotate(10deg);
+}
+
+.deco {
+    position: relative;
+    right: 2px;
+    top: 2px;
+}
+
+.d1, .d2, .d3, .d4 {
+    width: 5px;
+    height: 40px;
+    background-color: #ffff9d;
+    position: relative;
+}
+
+.d1 {
+    bottom: 20px;
+} 
+
+.d2 {
+    bottom: 60px;
+    transform: rotate(45deg);
+} 
+
+.d3 {
+    bottom: 100px;
+    transform: rotate(90deg);
+} 
+
+.d4 {
+    bottom: 140px;
+    transform: rotate(135deg);
+}
+
+.shadow {
+    width: 250px;
+    height: 30px;
+    position: relative;
+    background-color: #97819d;
+    border-radius: 50%;
+    top: 185px;
+    left: 125px;
+    opacity: .3;
+    z-index: -1;
+}
+
+.message {
+    width: 460px;
+    height: 100px;
+    position: relative;
+    top: 205px;
+    left: 25px;
+    opacity: 0;   
+}
+
+.message h2 {
+    font: 60px 'Parisienne', cursive;
+    color: #ffff9d;
+    text-shadow:  #585853 2px 5px 5px;
+}
+
+.box:hover ~ .message{
+    opacity: 1;
+    transition: 1.5s;
+}
+
+@keyframes blink{
+    20% {transform: scaleY(0)}
+}
